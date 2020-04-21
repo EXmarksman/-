@@ -1,0 +1,974 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Minecraft中文论坛</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta itemprop="image" content="images/logo_sc.png" />
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?affdf09dddabcdf2d681acefa474b973";
+				var s = document.getElementsByTagName("script")[0]; 
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+		<style>
+			.fastlg {
+				display:none;
+			}
+		</style>
+		<meta http-equiv="MSThemeCompatible" content="Yes" />
+		<link rel="manifest" href="./style/manifest.json"/>
+		<link rel="stylesheet" type="text/css" href="./style/style_30_common.css" />
+		<link rel="stylesheet" type="text/css" href="./style/style_30_portal_index.css" />
+		<script type="text/javascript">
+			var STYLEID = '30', STATICURL = 'static/', IMGDIR = 'template/mcbbs/image', VERHASH = 'IOq', charset = 'UTF-8', discuz_uid = '1740014', cookiepre = 'ZxYQ_8cea_', cookiedomain = '.mcbbs.net', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread|tradeorder|nav|usergroups', creditnotice = '1|人气|点,2|金粒|粒,3|金锭|块,4|绿宝石|颗,5|下界之星|枚,6|贡献|份,7|爱心|心,8|钻石|颗', defaultstyle = '', REPORTURL = 'aHR0cHM6Ly93d3cubWNiYnMubmV0Lw==', SITEURL = 'https://www.mcbbs.net/', JSPATH = 'data/cache/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';
+		</script>
+		<script src="./style/common.js" type="text/javascript"></script>
+		<script src="./style/forum.js" type="text/javascript"></script>
+		<script src="./style/portal.js" type="text/javascript"></script>
+		<script src="./style/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			var jq = jQuery.noConflict();
+		</script>
+	</head>
+	
+	<body id="nv_portal" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
+		<div id="body_fixed_bg"></div>
+		<div id="append_parent"></div>
+		<div id="ajaxwaitid"></div>
+		<div id="toptb" class="cl">
+			<div class="new_wp wp">
+				<div class="z light">
+					<a href="https://minecraft.net" target="_blank" >我的世界官网</a>
+					<a href="https://wiki.biligame.com/mc/Minecraft_Wiki" target="_blank" >我的世界中文百科</a>
+					<a href="https://www.mcbbs.net/thread-924844-1-1.html" >身份认证</a>
+					<a href="https://www.mcbbs.net/forum-server-1.html"  style="font-weight: bold;">服务器列表</a>
+				</div>
+				<div class="y">
+					<div class="cl y_search">
+						<form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="https://www.mcbbs.net/search.php?searchsubmit=yes" target="_blank">
+							<input type="hidden" name="mod" id="scbar_mod" value="search" />
+							<input type="hidden" name="formhash" value="16d7108b" />
+							<input type="hidden" name="srchtype" value="title" />
+							<input type="hidden" name="srhfid" value="0" />
+							<input type="hidden" name="srhlocality" value="portal::index" />
+							<table cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="y_search_btn">
+										<button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true">
+											<strong class="xi2">搜索</strong>
+										</button>
+									</td>
+									<td class="y_search_inp">
+										<input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" autocomplete="off" x-webkit-speech speech />
+									</td>
+									<td class="scbar_type_td">
+										<a href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true" style="height: 26px">搜索</a>
+									</td>
+								</tr>
+							</table>
+						</form>
+					</div>
+					<ul id="scbar_type_menu" class="p_pop" style="display: none;">
+						<li>
+							<a href="javascript:;" rel="forum" class="curtype">帖子</a>
+						</li>
+						<li>
+							<a href="javascript:;" rel="group">小组</a>
+						</li>
+						<li>
+							<a href="javascript:;" rel="user">用户</a>
+						</li>
+					</ul>
+					<script type="text/javascript">
+						initSearchmenu('scbar', '');
+					</script>
+					<div class="user_menu"></div>
+					<div class="user_tools" >
+						<a href="home.php?mod=space&amp;do=notice" class="newtips0" id="myprompt" title="消息" onmouseover="showMenu({'ctrlid':'myprompt'});" target="_blank"></a>
+						<a href="javascript:;" id="usertools" class="tools" title="功能" onmouseover="showMenu({'ctrlid':'usertools'});"></a>
+						<a href="home.php?mod=space&amp;do=friend" class="friends" title="好友" id="friends"></a>
+						<a id="sslct" href="javascript:;" onmouseover="delayShow(this, function() {showMenu({'ctrlid':'sslct','pos':'34!'})});"></a>
+					</div>
+					<div id="user_info_menu" style="display: none">
+						<ul class="user_info_menu_info">
+							<li>
+								<p class="username">Administrator</p>
+							</li>
+							<li>
+								<a class="rank" href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=13">Lv.12 屠龙者</a>
+							</li>
+							<li>
+								<a id="rank" href="home.php?mod=spacecp&amp;ac=usergroup&amp;gid=13" target="_blank">
+									<img src="./images/star_level3.gif" alt="Rank: 12" />
+									<img src="./images/star_level2.gif" alt="Rank: 12" />
+								</a>
+							</li>
+							<li>
+								<p class="credit">
+									<a href="home.php?mod=spacecp&amp;ac=credit&amp;showcredit=1">距离下一级还需要 0 经验值</a>
+								</p>
+							</li>
+							<li>
+								<span class="autowidth pbg2" >
+									<span class="pbr2" style="width:94%;"></span>
+								</span>
+							</li>
+							<li>
+								<a class="extcredits" title="金粒" href="home.php?mod=spacecp&amp;ac=credit"><em class="gold_nugget"></em> 999 </a>
+								<a class="extcredits" title="绿宝石" href="home.php?mod=spacecp&amp;ac=credit"><em class="emerald"></em> 999 </a>
+							</li>
+						</ul>
+						<ul class="user_info_menu_btn">
+							<li>
+								<a href="home.php?mod=spacecp" target="_blank">账号设置</a>
+							</li>
+							<li>
+								<a href="forum.php?mod=guide&amp;view=my" target="_blank">我的帖子</a>
+							</li>
+							<li>
+								<a href="home.php?mod=space&amp;do=favorite&amp;view=me" target="_blank">我的收藏</a>
+							</li>
+							<li>
+								<a href="member.php?mod=logging&amp;action=logout&amp;formhash=16d7108b" onclick="showDialog('你确定要退出登录吗？', 'confirm', '退出登录', function(){top.window.location.href = 'member.php?mod=logging&action=logout&formhash=16d7108b';}, 1, null, '', '', '', '', 0);return false;">退出登录</a>
+							</li>
+						</ul>
+					</div>
+					<div class="avt y" id="user_info" onmouseover="showMenu({'ctrlid':this.id})">
+						<div class="avt y hd_t_a" style="z-index:0">
+							<a href="home.php?mod=space&amp;uid=1740014">
+								<img src="./images/avatar.png" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!--消息通知--> 
+		<ul id="myprompt_menu" class="p_pop" style="display: none;">
+			<li>
+				<a href="home.php?mod=space&amp;do=pm" id="pm_ntc" style="background-repeat: no-repeat; background-position: 0 50%;" id="pm_ntc">消息</a>
+			</li>
+			<li>
+				<a href="home.php?mod=follow&amp;do=follower">粉丝</a>
+			</li>
+		</ul>
+		<ul id="usertools_menu" class="p_pop" style="display: none; text-align: center;">
+			<li>
+				<a href="home.php?mod=task">任务</a>
+			</li>
+			<li>
+				<a href="home.php?mod=magic">道具</a>
+			</li>
+			<li>
+				<a href="home.php?mod=medal">勋章</a>
+			</li>
+			<li>
+				<a href="plugin.php?id=mcbbs_ad:ad_manage">宣传</a>
+			</li>
+		</ul>
+		<div id="sslct_menu" class="cl p_pop" style="display: none;">
+			<span class="sslct_btn" onclick="extstyle('')" title="默认">
+				<i></i>
+			</span>
+			<span class="sslct_btn" onclick="extstyle('./template/mcbbs/style/default')" title="经典">
+				<i style="background:#70ba5e"></i>
+			</span>
+		</div>
+		<ul id="myitem_menu" class="p_pop" style="display: none;">
+			<li>
+				<a href="forum.php?mod=guide&amp;view=my">帖子</a>
+			</li>
+			<li>
+				<a href="home.php?mod=space&amp;do=favorite&amp;view=me">收藏</a>
+			</li>
+			<li>
+				<a href="home.php?mod=space&amp;do=friend">好友</a>
+			</li>
+		</ul>
+		<div id="qmenu_menu" class="p_pop " style="display: none;">
+			<div id="fjump_menu" class="btda"></div>
+		</div>
+		<!--整个主体div-->
+		<div class="mc_map_wp">
+			<!--头部公用 用户状态信息-->
+			<div class="new_wp" style="padding: 28px 0 26px 0;">
+				<div class="hdc cl">
+					<h2 style="padding:0;float: left;">
+						<a href="portal.php" title="Minecraft(我的世界)中文论坛">
+							<img src="./images/logo_sc.png" alt="Minecraft(我的世界)中文论坛" border="0" />
+						</a>
+					</h2>
+				</div>
+			</div>
+			<!--框背景的头部-->
+			<div class="mc_map_border_top"></div>
+			<!--框背景的左右-->
+			<div class="mc_map_border_left">
+				<div class="mc_map_border_right">
+					<div id="hd">
+						<div width="400" height="600" class="imgshadow"></div>
+						<div class="wp">
+							<div id="nv">
+								<ul class="nv_ul">
+									<li class="a" id="mn_portal" >
+										<a href="portal.php" hidefocus="true" title="Portal"  >首页<span>Portal</span></a>
+									</li>
+									<li id="mn_forum" >
+										<a href="forum.php" hidefocus="true" title="Forum"  >论坛<span>Forum</span></a>
+									</li>
+									<li id="mn_group" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})">
+										<a href="group.php" hidefocus="true" title="Groups"  >小组<span>Groups</span></a>
+									</li>
+									<li id="mn_N66dd" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})">
+										<a href="https://wiki.biligame.com/mc/Minecraft_Wiki" hidefocus="true" title="Wiki"  >百科<span>Wiki</span></a>
+									</li>
+									<li id="mn_N45f0" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})">
+										<a href="#" hidefocus="true" title="Utilities"  >工具<span>Utilities</span></a>
+									</li>
+								</ul>
+							</div>
+							<div id="nv_right">
+								<div id="an">
+									<dl class="cl">
+										<dt class="z xw1"></dt>
+										<dd>
+											<div id="anc">
+												<ul id="ancl">
+													<li>
+														<span>
+															<a href="thread-1024618-1-1.html" target="_blank" class="xi2">
+																<b>关于评分功能理由长度限制异常的处理公告</b>
+															</a>
+														</span>
+													</li>
+													<li>
+														<span>
+															<a href="http://www.mcbbs.net/thread-101000-1-1.html" target="_blank" class="xi2">告各位用户：请注意账号安全，设置高强度密码</a>
+														</span>
+													</li>
+												</ul>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<script type="text/javascript">
+									announcement();
+								</script>
+							</div>
+							<script type="text/javascript">
+								jq(function(){
+									jq("ul.p_pop").on("mouseover",function(){
+										var id = jq(this).attr("ctrlid");
+										jq("#"+id).css({background:"#e4dcc7",color:"#339933"});
+									});
+									jq("ul.p_pop").on("mouseleave",function(){
+										var id = jq(this).attr("ctrlid");
+										setTimeout(function(){
+											jq("#"+id).css({background:"none",color:"#fff"});
+										},250);
+									});
+								})
+							</script>
+							<ul class="p_pop h_pop" id="plugin_menu" style="display: none">
+								<li>
+									<a href="plugin.php?id=dc_signin:dc_signin" id="mn_plink_dc_signin">每日签到</a>
+								</li>
+							</ul>
+							<ul class="p_pop h_pop" id="mn_group_menu" style="display: none">
+								<li>
+									<a href="/thread-558439-1-1.html" hidefocus="true" >小组审核申请</a>
+								</li>
+								<li>
+									<a href="/thread-332265-1-1.html" hidefocus="true" >优秀小组申请</a>
+								</li>
+							</ul>
+							<div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div>
+							<ul class="p_pop h_pop" id="mn_N66dd_menu" style="display: none">
+								<li>
+									<a href="https://wiki.biligame.com/mc/%E5%90%88%E6%88%90" hidefocus="true" >[Wiki]合成</a>
+								</li>
+								<li>
+									<a href="https://wiki.biligame.com/mc/%E7%94%9F%E7%89%A9" hidefocus="true" >[Wiki]生物列表</a>
+								</li>
+								<li>
+									<a href="https://wiki.biligame.com/mc/%E6%A8%A1%E6%9D%BF:Blocks" hidefocus="true" >[Wiki]方块列表</a>
+								</li>
+								<li>
+									<a href="https://wiki.biligame.com/mc/%E6%A8%A1%E6%9D%BF:Items" hidefocus="true" >[Wiki]物品列表</a>
+								</li>
+								<li>
+									<a href="https://wiki.biligame.com/mc/%E7%83%A7%E7%82%BC" hidefocus="true" >[Wiki]烧炼</a>
+								</li>
+								<li>
+									<a href="https://wiki.biligame.com/mc/%E8%8D%AF%E6%B0%B4%E9%85%BF%E9%80%A0" hidefocus="true" >[Wiki]酿造</a>
+								</li>
+								<li>
+									<a href="https://wiki.biligame.com/mc/%E9%99%84%E9%AD%94" hidefocus="true" >[Wiki]附魔</a>
+								</li>
+								<li>
+									<a href="https://wiki.biligame.com/mc/%E4%BA%A4%E6%98%93" hidefocus="true" >[Wiki]交易</a>
+								</li>
+								<li>
+									<a href="https://wiki.biligame.com/mc/%E7%BA%A2%E7%9F%B3%E7%94%B5%E8%B7%AF" hidefocus="true" >[Wiki]红石电路</a>
+								</li>
+								<li>
+									<a href="https://minecraft-zh.gamepedia.com/Special:RecentChanges" hidefocus="true" >[Wiki]最近更改</a>
+								</li>
+							</ul>
+							<ul class="p_pop h_pop" id="mn_N45f0_menu" style="display: none">
+								<li>
+									<a href="misc.php?mod=faq" hidefocus="true" target="_blank" >帮助</a>
+								</li>
+								<li>
+									<a href="https://sm.ms/" hidefocus="true" target="_blank" >图床 - sm.ms</a>
+								</li>
+								<li>
+									<a href="https://upload.cc/" hidefocus="true" target="_blank" >图床 - Upload.cc</a>
+								</li>
+								<li>
+									<a href="http://pan.baidu.com" hidefocus="true" target="_blank" >网盘 - 百度网盘</a>
+								</li>
+								<li>
+									<a href="https://www.weiyun.com/" hidefocus="true" target="_blank" >网盘 - 微云</a>
+								</li>
+								<li>
+									<a href="http://modlist.mcf.li/" hidefocus="true" target="_blank" >MCF Mod列表</a>
+								</li>
+								<li>
+									<a href="https://www.baidu.com/s?wd=%20site%3Amcbbs.net" hidefocus="true" >搜索 - 百度站内搜索</a>
+								</li>
+								<li>
+									<a href="http://www.minecraft-crafting.net/" hidefocus="true" >flash在线合成表</a>
+								</li>
+							</ul>
+							<div id="mu" class="cl"></div>
+						</div>
+					</div>
+					<div id="wp" class="wp" style="margin:0 85px;float:left;">
+						<script src="./style/jquery.cycle.all.js" type="text/javascript"></script>
+						<script src="./style/jquery.easing.1.3.js" type="text/javascript"></script>
+						<script src="./style/portal_banner.js" type="text/javascript"></script>
+						<div >
+						</div>
+						<style id="diy_style" type="text/css">
+							#portal_block_737 .dxb_bc {
+								margin-top:0px !important;
+								margin-right:0px !important;
+								margin-bottom:0px !important;
+								margin-left:-15px !important;
+							}
+							#portal_block_741 {
+								border:#ddd2b7 3px solid !important;
+							}
+							#portal_block_721 {
+								border:#ddd2b7 0px solid !important;
+							}
+							#portal_block_737 {
+								border:#ddd2b7 3px solid !important;
+							}
+						</style>
+						<div class="wp">
+							<div id="diy1" class="area"></div>
+						</div>
+						<div id="ct" class="wp cl" style="margin-top:12px;">
+							<div id="portal_left">
+								<div style="margin-bottom:10px;">
+									<div id="diy_left" class="area">
+										<div id="frameUZtuot" class="frame move-span cl frame-1">
+											<div id="frameUZtuot_left" class="column frame-1-c">
+												<div id="frameUZtuot_left_temp" class="move-span temp"></div>
+												<div id="portal_block_728" class="block move-span">
+													<div id="portal_block_728_content" class="dxb_bc">
+														<div class="ss3_wrapper">
+															<a class="slideshow_prev">
+																<span>Previous</span>
+															</a>
+															<a class="slideshow_next">
+																<span>Next</span>
+															</a>
+															<ul class="slideshow_paging"></ul>
+															<div id="slideshow_3" class="slideshow" style="overflow: hidden;"><div class="slideshow_item">
+																<div class="image">
+																	<a href="/thread-1016433-1-1.html"  title="62506385"  target="_blank">
+																		<img src="./images/62506385.jpg" alt="62506385">
+																	</a>
+																</div>
+																<div class="thumb"  title="62506385">
+																	<img src="./images/62506385.jpg" alt="62506385"  title="62506385">
+																</div>
+																</div>
+																<div class="slideshow_item">
+																	<div class="image">
+																		<a href="/thread-984444-1-1.html"  title="64670481"  target="_blank">
+																			<img src="./images/64670481.jpg" alt="64670481">
+																		</a>
+																	</div>
+																	<div class="thumb"  title="64670481">
+																		<img src="./images/64670481.jpg" alt="64670481"  title="64670481">
+																	</div>
+																</div>
+																<div class="slideshow_item">
+																	<div class="image">
+																		<a href="/thread-983734-1-1.html"  title="65053285"  target="_blank">
+																			<img src="./images/65053285.jpg" alt="65053285">
+																		</a>
+																	</div>
+																	<div class="thumb"  title="65053285">
+																		<img src="./images/65053285.jpg" alt="65053285"  title="65053285">
+																	</div>
+																</div>
+																<div class="slideshow_item">
+																	<div class="image">
+																		<a href="https://www.mcbbs.net/thread-970398-1-1.html"  title="66570740"  target="_blank">
+																			<img src="./images/66570740.jpg" alt="66570740">
+																		</a>
+																	</div>
+																	<div class="thumb"  title="66570740">
+																		<img src="./images/66570740.jpg" alt="66570740"  title="66570740">
+																	</div>
+																</div>
+																<div class="slideshow_item">
+																	<div class="image">
+																		<a href="https://www.mcbbs.net/thread-948375-1-1.html"  title="67298792"  target="_blank">
+																			<img src="./images/67298792.png" alt="67298792">
+																		</a>
+																	</div>
+																	<div class="thumb"  title="67298792">
+																		<img src="./images/67298792.png" alt="67298792"  title="67298792">
+																	</div>
+																</div>
+																<div class="slideshow_item">
+																	<div class="image">
+																		<a href="https://www.mcbbs.net/forum.php?mod=viewthread&tid=975447&page=1&extra=#pid16703356"  title="74539039"  target="_blank">
+																			<img src="./images/74539039.jpg" alt="74539039">
+																		</a>
+																	</div>
+																	<div class="thumb"  title="74539039">
+																		<img src="./images/74539039.jpg" alt="74539039"  title="74539039">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--版主推荐-->
+								<div class="portal_left_dev">
+									<div class="portal_left_title">
+										<div class="portal_left_title_nav portal_bztj a">版主推荐</div>
+									</div>
+								</div>
+								<!--视频实况-->
+								<div class="portal_left_dev">
+									<div class="portal_left_title">
+										<div class="portal_left_title_nav portal_spsk a" onclick="location='/forum-video-1.html'">视频实况</div>
+										<a href="/forum-video-1.html" class="portal_left_more">更多</a>
+									</div>
+								</div>
+								<!--模组、插件-->
+								<div class="portal_left_dev">
+									<div class="portal_left_title">
+										<div class="portal_left_title_nav portal_mz a">模组</div>
+										<div class="portal_left_title_nav portal_cj">插件</div>
+										<a href="/forum-mod-1.html" class="portal_left_more">更多</a>
+										<a href="/forum-servermod-1.html" style="display: none;" class="portal_left_more">更多</a>
+									</div>
+								</div>
+								<!--皮肤，材质-->
+								<div class="portal_left_dev">
+									<div class="portal_left_title">
+										<div class="portal_left_title_nav portal_pf a">皮肤</div>
+										<div class="portal_left_title_nav portal_cz">材质</div>
+										<a href="/forum-skin-1.html" class="portal_left_more">更多</a>
+										<a href="/forum-texture-1.html" style="display: none;" class="portal_left_more">更多</a>
+									</div>
+								</div>
+								<!--地图-->
+								<div class="portal_left_dev">
+									<div class="portal_left_title">
+										<div class="portal_left_title_nav portal_dt a" onclick="location='/forum-map-1.html'">地图</div>
+										<a href="/forum-map-1.html" class="portal_left_more">更多</a>
+									</div>
+								</div>
+								<!--红石，命令方块-->
+								<div class="portal_left_dev">
+									<div class="portal_left_title">
+										<div class="portal_left_title_nav portal_hs a">红石</div>
+										<div class="portal_left_title_nav portal_mlfk">命令</div>
+										<a href="/forum.php?mod=forumdisplay&amp;fid=39&amp;filter=typeid&amp;typeid=184" class="portal_left_more">更多</a>
+										<a href="/forum.php?mod=forumdisplay&amp;fid=39&amp;filter=typeid&amp;typeid=1293" style="display: none;" class="portal_left_more">更多</a>
+									</div>
+								</div>
+							</div>
+							<div id="portal_index_right">
+								<style type="text/css">
+									.special_user_info1 {
+										padding:25px 10px;
+										width:250px;
+										height:95px;
+									}
+									.special_photo {
+										width:95px;
+										height:95px;
+										float:left;
+										display:inline-block;
+										background:url("./images/special_photo_bg.png") 0 0 no-repeat;
+									}
+									.special_photo img {
+										width:85px;
+										height:85px;
+										border:5px solid rgba(0,0,0,0);
+									}
+									.special_info {
+										width:125px;
+										height:85px;
+										padding:5px 10px;
+										float:left;
+										margin-left:10px;
+										background: url("./images/special_bg.png") center center no-repeat;
+									}
+									.special_info_t {
+										width:118px;
+										height:25px;
+										line-height:25px;
+										background:#fff;
+										padding-left:7px;
+										font-weight:700;
+									}
+									.special_info_i {
+										width:118px;
+										height:15px;
+										line-height:15px;
+										margin-top:5px;
+										background:#fff;
+										padding-left:7px;
+									}
+								</style>
+								<style type="text/css">
+									.special_user_info {
+										background: url(./images/login_bg.png) 0 0 no-repeat;
+									}
+									.special_user_info2 {
+										width:256px;height:110px;padding:0 7px;
+									}
+									.special_user_info2 a {
+										width:116px;
+										height:44px;
+										margin:0 6px 10px;
+										display:inline-block;
+										float:left;
+									}
+									.special_user_info2_btn1 {
+										background:url("./images/qd.png") 0 0 no-repeat;
+									}
+									.special_user_info2_btn2 {
+										background:url("./images/sc.png") 0 0 no-repeat;
+									}
+									.special_user_info2_btn3 {
+										background:url("./images/xx.png") 0 0 no-repeat;
+									}
+									.special_user_info2_btn4 {
+										background:url("./images/sz.png") 0 0 no-repeat;
+									}
+									.special_user_info2_btn5 {
+										background:url("./images/rw.png") 0 0 no-repeat;
+									}
+									.special_user_info2_btn6 {
+										background:url("./images/xz.png") 0 0 no-repeat;
+									}
+									.special_user_info3 {
+										width:210px;
+										padding:0 30px;
+										height:45px;
+										line-height:45px;
+									}
+									.special_user_info3 .pipe {
+										color: #333;
+										margin:0 15px;
+										display:inline-block;
+										float:left;
+									}
+									.special_user_info3 a {
+										font-size:14px;
+										display:inline-block;
+										float:left;
+									}
+								</style>
+								<div class="special_user_info">
+									<div class="special_user_info1">
+										<a href="home.php?mod=space&amp;uid=1740014" class="special_photo">
+											<img src="https://www.mcbbs.net/uc_server/avatar.php?uid=1740014&size=big" />
+										</a>
+										<div class="special_info">
+											<div class="special_info_t">
+												<a href="home.php?mod=space&amp;uid=1740014" target="_blank" title="访问我的空间">Administator</a>
+											</div>
+											<div class="special_info_i">
+												<a href="home.php?mod=spacecp&amp;ac=credit&amp;showcredit=1"> 积&nbsp;&nbsp;&nbsp;分 : 999</a>
+											</div>
+											<div class="special_info_i">
+												<a href="home.php?mod=spacecp&amp;ac=usergroup">用户组 : Lv.12 屠龙者</a>
+											</div>
+											<div class="special_info_i">
+												<a href="home.php?mod=space&amp;do=notice" class="">提&nbsp;&nbsp;&nbsp;醒 :  </a>
+											</div>
+										</div>
+									</div>
+									<div class="special_user_info2">
+										<a href="plugin.php?id=dc_signin" class="special_user_info2_btn1"></a>
+										<a href="home.php?mod=space&amp;do=favorite&amp;view=me" class="special_user_info2_btn2"></a>
+										<a href="home.php?mod=task" class="special_user_info2_btn5"></a>
+										<a href="home.php?mod=medal" class="special_user_info2_btn6"></a>
+									</div>
+									<div class="special_user_info3">
+										<a href="member.php?mod=logging&amp;action=logout&amp;formhash=16d7108b" style="float:right;">退出</a>
+									</div>
+								</div>
+								<div id="diy_right" class="area">
+									<div id="frameEUfgzT" class="frame move-span cl frame-1">
+										<div id="frameEUfgzT_left" class="column frame-1-c">
+											<div id="frameEUfgzT_left_temp" class="move-span temp"></div>
+											<div id="portal_block_721" class="block move-span">
+												<div class="blocktitle title">
+													<span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">新闻资讯</span>
+												</div>
+											</div>
+											<div id="portal_block_737" class="block move-span">
+												<div class="blocktitle title">
+													<span class="titletext" style="float:;margin-left:0px;font-size:;color: !important;">游戏下载</span>
+												</div>
+												<div id="portal_block_737_content" class="dxb_bc">
+													<style>
+														.btn:before,
+														.msg-heart:after,
+														.msg-star:after,
+														.msg-plus:after,
+														.msg-file:before {
+															speak: none;
+															font-size: 25px;
+															font-style: normal;
+															font-variant: normal;
+															text-transform: none;
+															line-height: 1;
+															position: relative;
+															-webkit-font-smoothing: antialiased;
+														}
+														.btn {
+															text-decoration:none;
+															border: none;
+															font-family: inherit;
+															font-size: inherit;
+															color: inherit;
+															background: none;
+															cursor: pointer;
+															padding: 15px 5px;
+															display: inline-block;
+															text-transform: uppercase;
+															letter-spacing: 1px;
+															font-weight: 700;
+															outline: none;
+															position: relative;
+															-webkit-transition: all 0.3s;
+															-moz-transition: all 0.3s;
+															transition: all 0.3s;
+														}
+														.btn:after {
+															content: '';
+															position: absolute;
+															z-index: -1;
+															-webkit-transition: all 0.3s;
+															-moz-transition: all 0.3s;
+															transition: all 0.3s;
+														}
+														.btn-5 {
+															text-align:center;
+															background-repeat:no-repeat;
+															background-size:100% 100%;
+															color: #fff;
+															width: 100%;
+															font-size: 16px;
+															overflow: hidden;
+															-webkit-backface-visibility: hidden;
+															-moz-backface-visibility: hidden;
+															backface-visibility: hidden;
+														}
+														.btn-s {
+															background-image: url(./images/222956bgqw19s6xesl6bk0.png);
+														}
+														.btn-b {
+															background-image: url(./images/222955keygylege2mguue2.png);
+														}
+														.btn-5:active {
+															top: 2px;
+														}
+														.btn-5 span {
+															display: inline-block;
+															width: 100%;
+															height: 100%;
+															-webkit-transition: all 0.3s;
+															-webkit-backface-visibility: hidden;
+															-moz-transition: all 0.3s;
+															-moz-backface-visibility: hidden;
+															transition: all 0.3s;
+															backface-visibility: hidden;
+															text-align:center; display:block;
+															transform: translateY(5%);
+														}
+														.btn-5:before {
+															position: absolute;
+															height: 100%;
+															width: 100%;
+															line-height: 2.5;
+															-webkit-transition: all 0.3s;
+															-moz-transition: all 0.3s;
+															transition: all 0.3s;
+														}
+														.btn-5:active:before {
+															background-repeat:no-repeat;
+															background-size:100% 100%;
+														}
+														.btn-5a:hover span {
+															-webkit-transform: translateY(300%);
+															-moz-transform: translateY(300%);
+															-ms-transform: translateY(300%);
+															transform: translateY(300%);
+														}
+														.btn-5a:before {
+															left: 0;
+															top: -100%;
+														}
+														.btn-5a:hover:before {
+															top: 0;
+														}
+														.msg-download:before {
+															content: "立即获取";
+															transform: translateY(5%);
+														}
+														.msg-buy:before {
+															content: "立即购买";
+															font-size: 15px;
+															transform: translateY(18%);
+														}
+													</style>
+													<div class="portal_game"> 
+														<table width="240px"> 
+															<tbody>
+																<tr> 
+																	<td colspan="2">
+																		<a class="btn btn-5 btn-b btn-5a msg-download" href="/thread-946592-1-1.html" target="_blank">
+																			<span><img style="vertical-align:middle; margin:-10px" src="./images/152153gs2ov472lno7fjfl.png" width="60" height="60" alt="我的世界正版客户端下载" />Java版:1.15.2</span>
+																		</a>
+																	</td>
+																</tr>
+																<tr> 
+																	<td width="45%">
+																		<a class="btn btn-5 btn-s btn-5a msg-buy" href="http://www.mcbbs.net/portal.php?mod=view&aid=129" target="_blank">
+																			<span><img style="vertical-align:middle;" src="./images/common_39_icon.png" alt="我的世界主机版购买" width="28" height="25" /> 主机版</span>
+																		</a>
+																	</td> 
+																	<td width="45%">
+																		<a class="btn btn-5 btn-s btn-5a msg-buy" href="http://www.mcbbs.net/thread-682618-1-1.html" target="_blank">
+																			<span><img style="vertical-align:middle; margin:3px,0px" src="./images/common_164_icon.png" alt="我的世界手机版下载" width=" 25" height="25" /> 基岩版</span>
+																		</a>
+																	</td>
+																</tr> 
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+											<div id="portal_block_831" class="block move-span">
+												<div class="blocktitle title">
+													<span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">客户端整合包</span>
+												</div>
+											</div>
+											<div id="portal_block_832" class="block move-span">
+												<div class="blocktitle title">
+													<span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">服务端整合包</span>
+												</div>
+											</div>
+											<div id="portal_block_843" class="block move-span">
+												<div class="blocktitle title">
+													<span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">官方博文</span>
+												</div>
+											</div>
+											<div id="portal_block_739" class="block move-span">
+												<div class="blocktitle title">
+													<span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">你问我答</span>
+												</div>
+											</div>
+											<div id="portal_block_741" class="block move-span">
+												<div class="blocktitle title">
+													<span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">拓展社区</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--友情链接-->
+							<div class="portal_left_dev" style="width:958px;float:left;">
+								<div class="portal_left_title" style="background:url(./images/title_bg_long.png) left top no-repeat;background-size:960px 35px;">
+									<div class="portal_left_title_nav portal_yqlj a">友情链接</div>
+								</div>
+							</div>
+							<div>
+								<div id="diy_friend" class="area"></div>
+							</div>
+						</div>
+						<script type="text/javascript">
+							jq(".portal_left_title_nav").mouseover(function(){
+								if(!jq(this).hasClass('a')){
+									jq(this).addClass("a").siblings(".portal_left_title_nav").removeClass("a");
+									var index = jq(this).index();
+									jq(this).parents(".portal_left_dev").find(".portal_left_diy").removeClass("active").css("display","none").eq(index).addClass("active").fadeIn(300);
+									jq(this).parents(".portal_left_dev").find(".portal_left_more").css("display","none").eq(index).css("display","block");
+								}
+							});
+							jq(".portal_txt_title").each(function(i){
+								var divH = jq(this).height();
+								var p = jq("p", jq(this)).eq(0);
+								while (p.outerHeight() > divH){
+									p.text(p.text().replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/, "..."));
+								};
+							});
+						</script>
+					</div>
+					<link rel="stylesheet" href="./style/github-gist.css" >
+					<style type="text/css">
+						.pl .quote, .pl .blockcode {
+							margin:0px;
+						}
+						@font-face {
+							font-family:"Cascadia Code";
+							src: url("source/plugin/zhaisoul_code_highlight/assets/Cascadia.ttf");
+							text-rendering: optimizeLegibility;
+						}
+						pre {
+						}
+						.code_div {
+							position: relative;
+						}
+						.blockcode ol {
+							overflow-x: scroll;
+						}
+						.code_tools a {
+							cursor: pointer;
+							color:white;
+							text-decoration: none;
+						}
+						.code_tools:hover {
+							opacity:0.2
+						}
+						code{
+							padding: 0px !important;
+							font: 14px/12px "Cascadia Code";
+							max-height:500px;
+						}
+						.t_f li {
+							margin-left:2.2em;
+						}
+					</style>
+					<script src="./style/highlight.pack.js"></script>
+					<script>
+					hljs.initHighlightingOnLoad();
+					</script>
+					<script src="https://www.mcbbs.net/plugin.php?id=dc_signin:check&formhash=16d7108b" type="text/javascript"></script>
+					<!--框背景的底部-->
+				</div>
+			</div>
+			<div class="mc_map_border_foot"></div>
+		</div>
+		<!--整个主体div结束-->
+		<style type="text/css">
+        #ft {
+			padding: 10px 0 20px;
+			line-height: 1.8;
+			color: #fff;
+			border:none;
+			font-size:14px;
+			}
+			#ft a {
+				color:#fff;
+				font-size:14px;
+			}
+			#scrolltop {
+				border:none;
+				background:none;
+				bottom:160px;
+			}
+			#scrolltop .scrolltopa {
+				background:url("./images/scrollTo.png") left top no-repeat;
+				width:71px;
+				height:54px;
+				border:none;
+			}
+		</style>
+		<script type="text/javascript">
+			jq(function(){
+				var window_h = jq(window).height();
+				jq(".mc_map_wp").css("minHeight",window_h - 284 + "px");
+			});
+		</script>
+		<div style="width:100%;margin-top:-20px;background:url('./images/bedrock.png') 0 0 repeat;padding-top:50px;">
+			<div id="ft" class="wp cl">
+				<div id="flk" class="y">
+					<p>
+						<a href="archiver/" >Archiver</a>
+						<span class="pipe">|</span>
+						<a href="forum.php?mod=misc&action=showdarkroom" >小黑屋</a>
+						<span class="pipe">|</span>
+						<strong>
+							<a href="https://www.mcbbs.net" target="_blank">Mcbbs.net</a>
+						</strong>
+						<a>(</a>
+						<a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备15023768号-1</a>
+						<a>)</a>
+						<span class="pipe">|</span>
+						<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502037624" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="https://attachment.mcbbs.net/forum/201904/18/174618efzrjz22n825mfds.png">京公网安备 11010502037624号</a><span class="pipe">|</span>
+						<script type="text/javascript">
+							var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+							document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Faffdf09dddabcdf2d681acefa474b973' type='text/javascript'%3E%3C/script%3E"));
+						</script>
+						<a href="http://www.mcbbs.net/forum.php?mobile=2">手机版</a>
+						<script>
+							var _hmt = _hmt || [];
+							(function() {
+								var hm = document.createElement("script");
+								hm.src = "https://hm.baidu.com/hm.js?affdf09dddabcdf2d681acefa474b973";
+								var s = document.getElementsByTagName("script")[0]; 
+								s.parentNode.insertBefore(hm, s);
+							})();
+						</script>
+					</p>
+					<p class="xs0">GMT+8, 2020-4-21 16:03<span id="debuginfo">, Processed in 0.035489 second(s), Total 4, Slave 4 queries, Release: Build.2020.04.01.1425, Gzip On, MemCached On.</span><script>console.log("Release: Build.2020.04.01.1425\ndeveloper：gamerteam(ZhaiSoul)\n");</script></p>
+					<p>"<a href="https://www.minecraft.net/" target="_blank">Minecraft</a>"以及"我的世界"为Mojang Synergies AB的商标 本站与Mojang以及微软公司没有从属关系</p>
+					<p>&copy; 2010-2020 <a href="https://www.mcbbs.net" target="_blank">我的世界中文论坛</a> 版权所有 本站原创图文内容版权属于原创作者，未经许可不得转载</p>
+				</div>
+			</div>
+		</div>
+		<script src="home.php?mod=spacecp&ac=pm&op=checknewpm&rand=1587456205" type="text/javascript"></script>
+		<script src="home.php?mod=misc&ac=sendmail&rand=1587456205" type="text/javascript"></script>
+		<div id="scrolltop">
+			<span hidefocus="true">
+				<a title="返回顶部" onclick="jq('body,html').animate({scrollTop:0},400);" class="scrolltopa" >
+					<b>返回顶部</b>
+				</a>
+			</span>
+		</div>
+		<script type="text/javascript">
+			_attachEvent(window, 'scroll', function () {
+				showTopLink();
+			});
+			checkBlind();
+		</script>
+	</body>
+</html>
