@@ -584,24 +584,6 @@
 								</div>
 							</div>
 						</div>
-						<!--左半部分翻页-->
-						<script type="text/javascript">
-							jq(".portal_left_title_nav").mouseover(function(){
-								if(!jq(this).hasClass('a')){
-									jq(this).addClass("a").siblings(".portal_left_title_nav").removeClass("a");
-									var index = jq(this).index();
-									jq(this).parents(".portal_left_dev").find(".portal_left_diy").removeClass("active").css("display","none").eq(index).addClass("active").fadeIn(300);
-									jq(this).parents(".portal_left_dev").find(".portal_left_more").css("display","none").eq(index).css("display","block");
-								}
-							});
-							jq(".portal_txt_title").each(function(i){
-								var divH = jq(this).height();
-								var p = jq("p", jq(this)).eq(0);
-								while (p.outerHeight() > divH){
-									p.text(p.text().replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/, "..."));
-								};
-							});
-						</script>
 					</div>
 				</div>
 			</div>
