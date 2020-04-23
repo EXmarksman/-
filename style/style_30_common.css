@@ -359,57 +359,6 @@ a img{
 .title{
 	padding:0 10px;height:32px;font-size:14px;font-weight:700;line-height:32px;overflow:hidden;
 }
-.frame .mn{
-	margin-bottom:0;
-}
-.frame .sd{
-	min-height:0;_height:auto;
-}
-.frame-1-1 .col-r{
-	float:right;width:49.9%;
-}
-.frame-1-1 .col-l{
-	float:left;width:49.9%;
-}
-.frame-1-2 .mn,.frame-1-2 .col-r,.frame .frame-1-2 .mn,.frame .frame-1-2 .col-r{
-	float:right;width:66.6%;
-}
-.frame-1-2 .sd,.frame-1-2 .col-l,.frame .frame-1-2 .sd,.frame .frame-1-2 .col-l{
-	float:left;width:33.3%;
-}
-.frame-2-1 .mn,.frame-2-1 .col-l,.frame .frame-2-1 .mn,.frame .frame-2-1 .col-l{
-	float:left;width:66.6%;
-}
-.frame-2-1 .sd,.frame-2-1 .col-r,.frame .frame-2-1 .sd,.frame .frame-2-1 .col-r{
-	float:right;width:33.3%;
-}
-.frame-1-3 .mn,.frame-1-3 .col-r,.frame .frame-1-3 .mn,.frame .frame-1-3 .col-r{
-	float:right;width:74.9%;
-}
-.frame-1-3 .sd,.frame-1-3 .col-l,.frame .frame-1-3 .sd,.frame .frame-1-3 .col-l{
-	float:left;width:24.9%;
-}
-.frame-3-1 .mn,.frame-3-1 .col-l,.frame .frame-3-1 .mn,.frame .frame-3-1 .col-l{
-	float:left;width:74.9%;
-}
-.frame-3-1 .sd,.frame-3-1 .col-r,.frame .frame-3-1 .sd,.frame .frame-3-1 .col-r{
-	float:right;width:24.9%
-}
-.frame-1-1-1 .col-l{
-	float:left;width:33.3%;
-}
-.frame-1-1-1 .col-c{
-	float:left;width:33.3%;
-}
-.frame-1-1-1 .col-r{
-	float:right;width:33.3%;
-}
-.frame .frame-1-1-1 .col-l,.frame .frame-1-1-1 .col-c,.frame .frame-1-1-1 .col-r{
-	padding:0;width:33%;
-}
-.frame .frame-1-1 .col-l,.frame .frame-1-1 .col-r{
-	width:49.9%;
-}
 .frame .title .titletext,.block .title .titletext{
 	float:left;
 }
