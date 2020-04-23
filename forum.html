@@ -1,0 +1,639 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!--网页编码-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!--指定IE8浏览器模拟Edge浏览器的渲染方式-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--在IE中关闭xp主题-->
+		<meta http-equiv="MSThemeCompatible" content="Yes" />
+		<!--标题-->
+		<title>Minecraft中文论坛</title>
+		<!--图标-->
+		<link rel="icon" href="./images/logo.png" type="image/x-icon">
+		<!--收藏夹图标-->
+		<link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+		<!--主体css-->
+		<link rel="stylesheet" type="text/css" href="./style/style_30_common.css" />
+		<link rel="stylesheet" type="text/css" href="./style/style_30_portal_index.css" />
+		<!--通用js-->
+		<script src="./style/common.js" type="text/javascript"></script><!--头像-->
+		<script src="./style/forum.js" type="text/javascript"></script><!--公告栏-->
+		<script src="./style/jquery.min.js" type="text/javascript"></script><!--jquery库-->
+		<!--图片滚动-->
+		<script type="text/javascript">
+			var jq = jQuery.noConflict();
+		</script>
+	</head>
+	
+	<body id="nv_portal" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
+		<!--背景-->
+		<div id="body_fixed_bg"></div>
+		<!--导航栏-->
+		<div id="toptb" class="cl">
+			<div class="new_wp wp">
+				<div class="z light">
+					<a href="http://www.baiyunu.edu.cn/" target="_blank" >广东白云学院官网</a>
+					<a href="https://baike.baidu.com/item/广东白云学院/2971074" target="_blank" >广东白云学院中文百科</a>
+				</div>
+				<div class="y">
+					<div class="user_tools" >
+						<a href="" class="newtips0" id="myprompt" title="消息" onmouseover="showMenu({'ctrlid':'myprompt'});" target="_blank"></a>
+						<a href="" id="usertools" class="tools" title="功能" onmouseover="showMenu({'ctrlid':'usertools'});"></a>
+						<a href="" class="friends" title="好友" id="friends"></a>
+					</div>
+					<div id="user_info_menu" style="display: none">
+						<ul class="user_info_menu_info">
+							<li>
+								<p class="username">Administrator</p>
+							</li>
+							<li>
+								<a class="rank" href="">Lv.∞ 系统管理员</a>
+							</li>
+						</ul>
+						<ul class="user_info_menu_btn">
+							<li>
+								<a href="" target="_blank">账号设置</a>
+							</li>
+							<li>
+								<a href="" target="_blank">我的帖子</a>
+							</li>
+							<li>
+								<a href="" target="_blank">我的收藏</a>
+							</li>
+							<li>
+								<a href="" onclick="">退出登录</a>
+							</li>
+						</ul>
+					</div>
+					<div class="avt y" id="user_info" onmouseover="showMenu({'ctrlid':this.id})">
+						<div class="avt y hd_t_a" style="z-index:0">
+							<a href="">
+								<img alt="Administrator" src="./images/avatar.png" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!--下拉菜单-->
+		<ul id="myprompt_menu" class="p_pop" style="display: none;">
+			<li>
+				<a href="">消息</a>
+			</li>
+			<li>
+				<a href="">粉丝</a>
+			</li>
+		</ul>
+		<ul id="usertools_menu" class="p_pop" style="display: none;">
+			<li>
+				<a href="">任务</a>
+			</li>
+			<li>
+				<a href="">道具</a>
+			</li>
+			<li>
+				<a href="">勋章</a>
+			</li>
+			<li>
+				<a href="">宣传</a>
+			</li>
+		</ul>
+		<div id="sslct_menu" class="cl p_pop" style="display: none;">
+			<span class="sslct_btn" onclick="" title="默认">
+				<i></i>
+			</span>
+			<span class="sslct_btn" onclick="" title="经典">
+				<i style="background:#70ba5e"></i>
+			</span>
+		</div>
+		<!--主体div-->
+		<div class="mc_map_wp">
+			<!--头部-->
+			<div class="new_wp" style="padding: 28px 0 26px 0;">
+				<div class="hdc cl">
+					<!--论坛标志-->
+					<h2 style="padding:0;float: left;">
+						<a href="#" title="广东白云学院论坛">
+							<img src="./images/logo_sc.png" alt="广东白云学院论坛" border="0" />
+						</a>
+					</h2>
+					<!--校训-->
+					<div id="YXh3Sg" class="y">
+						<div id="s5WWA8f34">
+							<div id="dG2s">
+								<div class="col-lg-3 col-lg-offset-4 col-xs-12">
+									<div class="RjlxN">
+										<div id="txt">
+											<i class="a1">理想职业从白云开始</i>
+											<i class="a2">敦品励学 求是笃行</i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<style>
+						#s5WWA8f34 {
+							width: 480px;
+							height: 96px;
+							position: relative;
+							overflow: hidden;
+							text-align: center;
+						}
+						#s5WWA8f34 #dG2s {
+							margin: 9px 9px;
+						}
+						#s5WWA8f34 .RjlxN {
+							display: inline-block;
+							margin-right: 8px;
+						}
+						#txt .a1,#txt .a2 {
+							font-size:14px;
+							color:#034567;
+							font-weight:700;
+							display:block;
+							overflow:hidden;
+							width:0;
+							margin-top:3px;
+							white-space:nowrap;
+							letter-spacing:10px;
+							font-style:normal;
+							position:absolute
+						}
+						#txt .a1 {
+							animation:m1 10s infinite;
+							-webkit-animation:m1 8s infinite;
+						}
+						#txt .a2 {
+							animation:m2 10s infinite;
+							-webkit-animation:m2 8s infinite;
+						}
+						@keyframes m1 {
+							0% {width:0;
+								opacity:0;
+							}
+							5% {
+								width:10%;
+								opacity:1;
+							}
+							10% {
+								width:20%;
+								opacity:1;
+							}
+							15% {
+								width:30%;
+								opacity:1;
+							}
+							20% {
+								width:40%;
+								opacity:1;
+							}
+							25% {
+								width:50%;
+								opacity:1;
+							}
+							30% {
+								width:60%;
+								opacity:1;
+							}
+							35% {
+								width:70%;
+								opacity:1;
+							}
+							40% {
+								width:80%;
+								opacity:1;
+							}
+							45% {
+								width:100%;
+								opacity:1;
+							}
+							50% {
+								opacity:0;
+							}
+							100% {
+								opacity:0;
+							}
+						}
+						@-webkit-keyframes m2{
+							0% {
+								width:0;
+								opacity:0;
+							}
+							50% {
+								width:0;
+								opacity:0;
+							}
+							55% {
+								width:10%;
+								opacity:1;
+							}
+							60% {
+								width:20%;
+								opacity:1;
+							}
+							65% {
+								width:30%;
+								opacity:1;
+							}
+							70% {
+								width:40%;
+								opacity:1;
+							}
+							75% {
+								width:50%;
+								opacity:1;
+							}
+							80% {
+								width:60%;
+								opacity:1;
+							}
+							85% {
+								width:70%;
+								opacity:1;
+							}
+							90% {
+								width:80%;
+								opacity:1;
+							}
+							95% {
+								width:100%;
+								opacity:1;
+							}
+							100% {
+								width:100%;
+								opacity:0;
+							}
+						}
+					</style>
+				</div>
+			</div>
+			<!--框背景的头部-->
+			<div class="mc_map_border_top"></div>
+			<!--框背景的左半部分-->
+			<div class="mc_map_border_left">
+				<!--框背景的右半部分-->
+				<div class="mc_map_border_right">
+					<div id="hd">
+						<div class="wp">
+							<div id="nv">
+								<ul class="nv_ul">
+									<li id="mn_portal" >
+										<a href="./index.html" hidefocus="true" title="Portal"  >首页<span>Portal</span></a>
+									</li>
+									<li class="a" id="mn_forum" >
+										<a href="./forum.html" hidefocus="true" title="Forum"  >论坛<span>Forum</span></a>
+									</li>
+									<li id="mn_group" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})">
+										<a href="" hidefocus="true" title="Groups"  >小组<span>Groups</span></a>
+									</li>
+									<li id="mn_N66dd" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})">
+										<a href="" hidefocus="true" title="Wiki"  >百科<span>Wiki</span></a>
+									</li>
+									<li id="mn_N45f0" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})">
+										<a href="#" hidefocus="true" title="Utilities"  >工具<span>Utilities</span></a>
+									</li>
+								</ul>
+							</div>
+							<!--公告-->
+							<div id="nv_right">
+								<div id="an">
+									<dl class="cl">
+										<dd>
+											<div id="anc">
+												<ul id="ancl">
+													<li>
+														<span>
+															<a href="" target="_blank" class="xi2">欢迎来到广东白云学院论坛 理想职业从白云开始</a>
+														</span>
+													</li>
+													<li>
+														<span>
+															<a href="" target="_blank" class="xi2">请各位同学遵守版规 敦品励学 求是笃行</a>
+														</span>
+													</li>
+												</ul>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<!--下面这段公告翻页用的-->
+								<script type="text/javascript">
+									announcement();
+								</script>
+							</div>
+							<!--下拉菜单-->
+							<ul class="p_pop h_pop" id="mn_group_menu" style="display: none">
+								<li>
+									<a href="" hidefocus="true" >小组审核申请</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" >优秀小组申请</a>
+								</li>
+							</ul>
+							<ul class="p_pop h_pop" id="mn_N66dd_menu" style="display: none">
+								<li>
+									<a href="" hidefocus="true" >[Wiki]合成</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" >[Wiki]生物列表</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" >[Wiki]方块列表</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" >[Wiki]物品列表</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" >[Wiki]烧炼</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" >[Wiki]酿造</a>
+								</li>
+								<li>
+									<a href="" >[Wiki]附魔</a>
+								</li>
+								<li>
+									<a href="" >[Wiki]交易</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" >[Wiki]红石电路</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" >[Wiki]最近更改</a>
+								</li>
+							</ul>
+							<ul class="p_pop h_pop" id="mn_N45f0_menu" style="display: none">
+								<li>
+									<a href="" hidefocus="true" target="_blank" >帮助</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" target="_blank" >图床 - sm.ms</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" target="_blank" >图床 - Upload.cc</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" target="_blank" >网盘 - 百度网盘</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" target="_blank" >网盘 - 微云</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" target="_blank" >MCF Mod列表</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" >搜索 - 百度站内搜索</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" >flash在线合成表</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="wp" class="wp" style="margin:0 85px;float:left;">
+						<!--下面两个滚动图片用的-->
+						<script src="./style/jquery.cycle.all.js" type="text/javascript"></script><!--jQuery图片切换插件-->
+						<script src="./style/portal_banner.js" type="text/javascript"></script><!--滚动横幅-->
+						<style id="diy_style" type="text/css">
+							#portal_block_737 .dxb_bc {
+								margin-top:0px !important;
+								margin-right:0px !important;
+								margin-bottom:0px !important;
+								margin-left:-15px !important;
+							}
+							#portal_block_741 {
+								border:#ddd2b7 3px solid !important;
+							}
+							#portal_block_721 {
+								border:#ddd2b7 0px solid !important;
+							}
+							#portal_block_737 {
+								border:#ddd2b7 3px solid !important;
+							}
+						</style>
+						<div id="ct" class="wp cl" style="margin-top:12px;">
+							<!--左半部分-->
+							<div id="portal_left">
+								<div style="margin-bottom:10px;">
+									<div id="diy_left" class="area">
+										<div id="frameUZtuot" class="frame move-span cl frame-1">
+											<div id="frameUZtuot_left" class="column frame-1-c">
+												<div id="portal_block_728" class="block move-span">
+													<div id="portal_block_728_content" class="dxb_bc">
+														<!--滚动图片-->
+														<div class="ss3_wrapper">
+															<a class="slideshow_prev">
+																<span>Previous</span>
+															</a>
+															<a class="slideshow_next">
+																<span>Next</span>
+															</a>
+															<ul class="slideshow_paging"></ul>
+															<div id="slideshow_3" class="slideshow" style="overflow: hidden;"><div class="slideshow_item">
+																<div class="image">
+																	<a href=""  title="62506385"  target="_blank">
+																		<img src="./images/62506385.jpg" alt="62506385">
+																	</a>
+																</div>
+																<div class="thumb"  title="62506385">
+																	<img src="./images/62506385.jpg" alt="62506385"  title="62506385">
+																</div>
+																</div>
+																<div class="slideshow_item">
+																	<div class="image">
+																		<a href=""  title="64670481"  target="_blank">
+																			<img src="./images/64670481.jpg" alt="64670481">
+																		</a>
+																	</div>
+																	<div class="thumb"  title="64670481">
+																		<img src="./images/64670481.jpg" alt="64670481"  title="64670481">
+																	</div>
+																</div>
+																<div class="slideshow_item">
+																	<div class="image">
+																		<a href=""  title="65053285"  target="_blank">
+																			<img src="./images/65053285.jpg" alt="65053285">
+																		</a>
+																	</div>
+																	<div class="thumb"  title="65053285">
+																		<img src="./images/65053285.jpg" alt="65053285"  title="65053285">
+																	</div>
+																</div>
+																<div class="slideshow_item">
+																	<div class="image">
+																		<a href="https://www.mcbbs.net/thread-970398-1-1.html"  title="66570740"  target="_blank">
+																			<img src="./images/66570740.jpg" alt="66570740">
+																		</a>
+																	</div>
+																	<div class="thumb"  title="66570740">
+																		<img src="./images/66570740.jpg" alt="66570740"  title="66570740">
+																	</div>
+																</div>
+																<div class="slideshow_item">
+																	<div class="image">
+																		<a href="https://www.mcbbs.net/thread-948375-1-1.html"  title="67298792"  target="_blank">
+																			<img src="./images/67298792.png" alt="67298792">
+																		</a>
+																	</div>
+																	<div class="thumb"  title="67298792">
+																		<img src="./images/67298792.png" alt="67298792"  title="67298792">
+																	</div>
+																</div>
+																<div class="slideshow_item">
+																	<div class="image">
+																		<a href=""  title="74539039"  target="_blank">
+																			<img src="./images/74539039.jpg" alt="74539039">
+																		</a>
+																	</div>
+																	<div class="thumb"  title="74539039">
+																		<img src="./images/74539039.jpg" alt="74539039"  title="74539039">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--我的大学-->
+								<div class="portal_left_dev">
+									<div class="portal_left_title">
+										<div class="portal_left_title_nav portal_bztj a">我的大学</div>
+									</div>
+								</div>
+								<!--休闲娱乐-->
+								<div class="portal_left_dev">
+									<div class="portal_left_title">
+										<div class="portal_left_title_nav portal_spsk a" onclick="location='/forum-video-1.html'">休闲娱乐</div>
+										<a href="" class="portal_left_more">更多</a>
+									</div>
+								</div>
+								<!--资讯新闻-->
+								<div class="portal_left_dev">
+									<div class="portal_left_title">
+										<div class="portal_left_title_nav portal_dt a" onclick="location='/forum-map-1.html'">资讯新闻</div>
+										<a href="" class="portal_left_more">更多</a>
+									</div>
+								</div>
+								<!--站务管理-->
+								<div class="portal_left_dev">
+									<div class="portal_left_title">
+										<div class="portal_left_title_nav portal_dt a" onclick="location='/forum-map-1.html'">站务管理</div>
+										<a href="" class="portal_left_more">更多</a>
+									</div>
+								</div>
+							</div>
+							<!--右半部分-->
+							<div id="portal_index_right">
+								<div id="diy_right" class="area">
+									<div id="frameEUfgzT" class="frame move-span cl frame-1">
+										<div id="frameEUfgzT_left" class="column frame-1-c">
+											<div class="block move-span">
+												<div class="blocktitle title">
+													<span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">最新帖子</span>
+												</div>
+											</div>
+											<div class="block move-span">
+												<div class="blocktitle title">
+													<span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">本周热门</span>
+												</div>
+											</div>
+											<div class="block move-span">
+												<div class="blocktitle title">
+													<span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">官方博文</span>
+												</div>
+											</div>
+											<div class="block move-span">
+												<div class="blocktitle title">
+													<span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">拓展社区</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--友情链接-->
+							<div class="portal_left_dev" style="width:958px;float:left;">
+								<div class="portal_left_title" style="background:url(./images/title_bg_long.png) left top no-repeat;background-size:960px 35px;">
+									<div class="portal_left_title_nav portal_yqlj a">友情链接</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--框背景的底部-->
+			<div class="mc_map_border_foot"></div>
+		</div>
+		<!--主体div结束-->
+		<!--脚注-->
+		<div style="width:100%;margin-top:-20px;background:url('./images/bedrock.png') 0 0 repeat;padding-top:50px;">
+			<div id="ft" class="wp cl">
+				<div id="flk" class="y">
+					<p>
+						<strong>
+							<a href="https://www.mcbbs.net" target="_blank">GDBYXYBBS.net</a>
+						</strong>
+						<a>(</a>
+						<a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备666666号-6</a>
+						<a>)</a>
+						<span class="pipe">|</span>
+						<a target="_blank" href="" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img alt="京公网安" src="./images/174618efzrjz22n825mfds.png">京公网安备 666666666666号</a>
+					</p>
+					<p class="xs0">GMT+8 <span id="Time"></span><span id="debuginfo">, Release: Build.2020.04.22.2200, GYM.</span></p>
+					<p>"广东白云学院®"为广东白云学院的商标 本站与广东白云学院没有从属关系</p>
+					<p>&copy; 2000-2020 <a href="" target="_blank">广东白云学院论坛</a> 版权所有 本站原创图文内容版权属于原创作者，未经许可不得转载</p>
+					<!--显示时间-->
+					<script>
+						setInterval("Time.innerHTML=new Date().toLocaleString()",1000);
+					</script>
+				</div>
+			</div>
+		</div>
+		<!--返回顶部-->
+		<div id="scrolltop">
+			<span hidefocus="true">
+				<a title="返回顶部" onclick="jq('body,html').animate({scrollTop:0},400);" class="scrolltopa" >
+					<b>返回顶部</b>
+				</a>
+			</span>
+		</div>
+		<!--脚本-->
+		<script type="text/javascript">
+			_attachEvent(window, 'scroll', function () {
+				showTopLink();
+			});
+			checkBlind();
+		</script>
+		<!--样式-->
+		<style type="text/css">
+			#ft {
+				padding: 10px 0 20px;
+				line-height: 1.8;
+				color: #fff;
+				border:none;
+				font-size:14px;
+			}
+			#ft a {
+				color:#fff;
+				font-size:14px;
+			}
+			#scrolltop {
+				border:none;
+				background:none;
+				bottom:160px;
+			}
+			#scrolltop .scrolltopa {
+				background:url("./images/scrollTop.png") left top no-repeat;
+				width:120px;
+				height:70px;
+				border:none;
+			}
+		</style>
+	</body>
+</html>
+<!--好JB长-->
