@@ -5,7 +5,7 @@
 	width:100%;height:100%;position:fixed;top:0;z-index:-99999;background:#FFFFFF url("../images/body_bg.jpg") 0 0 no-repeat;;background-size:cover;
 }
 body,input,button,select,textarea{
-	font:12px/1.5 Tahoma,'Hiragino Sans GB','WenQuanYi Micro Hei','Microsoft Yahei',sans-serif;color:#FFF;
+	font:12px/1.5 Tahoma,'Hiragino Sans GB','WenQuanYi Micro Hei','Microsoft Yahei',sans-serif;color:#014165;
 }
 body,ul,ol,li,dl,dd,p,h1,h2,h3,h4,h5,h6,form,fieldset{
 	margin:0;padding:0;scroll-behavior:smooth;
@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6{
 	font-size:1em;
 }
 a{
-	color:#000000;text-decoration:none;-webkit-transition:all 0.2s ease;transition:all 0.2s ease;
+	color:#014165;text-decoration:none;-webkit-transition:all 0.2s ease;transition:all 0.2s ease;
 }
 a:hover{
 	text-decoration:underline;color:#3B88AC;
