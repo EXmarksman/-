@@ -16,6 +16,7 @@
 		<!--主体css-->
 		<link rel="stylesheet" type="text/css" href="../style/style_30_common.css" />
 		<link rel="stylesheet" type="text/css" href="../style/style_30_portal_index.css" />
+		<link rel="stylesheet" type="text/css" href="../style/style_30_forum_forumdisplay.css" />
 		<!--通用js-->
 		<script src="../style/common.js" type="text/javascript"></script><!--头像-->
 		<script src="../style/forum.js" type="text/javascript"></script><!--公告栏-->
@@ -25,8 +26,8 @@
 			var jq = jQuery.noConflict();
 		</script>
 	</head>
-
-<body id="nv_portal" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
+	
+	<body id="nv_portal" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
 		<!--背景-->
 		<div id="body_fixed_bg"></div>
 		<!--导航栏-->
@@ -36,7 +37,7 @@
 					<a href="http://www.baiyunu.edu.cn/" target="_blank" >广东白云学院官网</a>
 					<a href="https://baike.baidu.com/item/广东白云学院/2971074" target="_blank" >广东白云学院中文百科</a>
 				</div>
-		<div class="y">
+				<div class="y">
 					<div class="user_tools" >
 						<a href="#" class="newtips0" id="myprompt" title="消息" onmouseover="showMenu({'ctrlid':'myprompt'});" target="_blank"></a>
 						<a href="#" id="usertools" class="tools" title="功能" onmouseover="showMenu({'ctrlid':'usertools'});"></a>
@@ -102,11 +103,11 @@
 		<!--主体div-->
 		<div class="mc_map_wp">
 			<!--头部-->
-<div class="new_wp" style="padding: 28px 0 26px 0;">
+			<div class="new_wp" style="padding: 28px 0 26px 0;">
 				<div class="hdc cl">
 					<!--论坛标志-->
 					<h2 style="padding:0;float: left;">
-						<a href="#" title="广东白云学院论坛">
+						<a href="../index.html" title="广东白云学院论坛">
 							<img src="../images/logo_sc.png" alt="广东白云学院论坛" border="0" />
 						</a>
 					</h2>
@@ -116,13 +117,17 @@
 							<div id="dG2s">
 								<div class="col-lg-3 col-lg-offset-4 col-xs-12">
 									<div class="RjlxN">
-										<div id="txt"><em class="a1">理想职业从白云开始</em> <em class="a2">敦品励学 求是笃行</em></div>
+										<div id="txt">
+											<i class="a1">理想职业从白云开始</i>
+											<i class="a2">敦品励学 求是笃行</i>
+										</div>
+
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				<style>
+					<style>
 						#s5WWA8f34 {
 							width: 480px;
 							height: 96px;
@@ -268,19 +273,21 @@
 						<div class="wp">
 							<div id="nv">
 								<ul class="nv_ul">
-									<li class="a" id="mn_portal" >
-										<a href="" hidefocus="true" title="Portal"  >首页<span>Portal</span></a>
+									<li id="mn_portal" >
+										<a href="../index.html" hidefocus="true" title="Portal"  >首页<span>Portal</span></a>
 									</li>
-									<li id="mn_forum" >
-										<a href="" hidefocus="true" title="Forum"  >论坛<span>Forum</span></a>
+									<li class="a" id="mn_forum" >
+										<a href="../forum.html" hidefocus="true" title="Forum"  >论坛<span>Forum</span></a>
 									</li>
 									<li id="mn_group" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})">
-										<a href="" hidefocus="true" title="Groups"  >小组<span>Groups</span></a>
+										<a href="../images.html" hidefocus="true" title="Images"  >图片<span>Images</span></a>
 									</li>
 									<li id="mn_N66dd" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})">
-										<a href="" hidefocus="true" title="Wiki"  >百科<span>Wiki</span></a>
+										<a href="#" hidefocus="true" title="Plate"  >板块<span>Plate</span></a>
 									</li>
-									<li id="mn_N45f0" onMouseOver="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})"> <a href="#" hidefocus="true" title="Utilities">工具<span>Utilities</span></a> </li>
+									<li id="mn_N45f0" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})">
+										<a href="#" hidefocus="true" title="Groups"  >群组<span>Groups</span></a>
+									</li>
 								</ul>
 							</div>
 							<!--公告-->
@@ -305,69 +312,34 @@
 										</dd>
 									</dl>
 								</div>
-				<!--下面这段公告翻页用的-->
+								<!--下面这段公告翻页用的-->
 								<script type="text/javascript">
 									announcement();
 								</script>
 							</div>
 							<!--下拉菜单-->
-							<ul class="p_pop h_pop" id="mn_group_menu" style="display: none">
-								<li>
-									<a href="" hidefocus="true" >小组审核申请</a>
-								</li>
-								<li>
-									<a href="" hidefocus="true" >优秀小组申请</a>
-								</li>
-							</ul>
 							<ul class="p_pop h_pop" id="mn_N66dd_menu" style="display: none">
-							  <li> <a hidefocus="true">办学历史</a> </li>
-							  <li>
-									<a href="" hidefocus="true" >办学条件</a>
-							  </li>
 								<li>
-									<a href="" hidefocus="true" >学科建设</a>
+									<a href="../discuss.html" hidefocus="true" >综合讨论</a>
 								</li>
 								<li>
-									<a href="" hidefocus="true" >师资力量</a>
+									<a href="../recreation.html" hidefocus="true" >休闲娱乐</a>
 								</li>
 								<li>
-									<a href="" hidefocus="true" >教学建设</a>
+									<a href="../talk.html" hidefocus="true" >灵感交流</a>
 								</li>
 								<li>
-									<a href="" hidefocus="true" >合作交流</a>
+									<a href="../question.html" hidefocus="true" >你问我答</a>
 								</li>
-								<li>
-									<a href="" >科研成果</a>
-								</li>
-								<li>
-									<a href="" >学术资源</a>
-								</li>
-								<li>
-									<a href="" hidefocus="true" >文化传统</a>
-								</li>
-								
 							</ul>
 							<ul class="p_pop h_pop" id="mn_N45f0_menu" style="display: none">
 								<li>
-									<a href="" hidefocus="true" target="_blank" >帮助</a>
+									<a href="#" hidefocus="true" title="暂未开放">官方群组</a>
 								</li>
 								<li>
-									<a href="" hidefocus="true" target="_blank" >图床 - sm.ms</a>
-								</li>
-								<li>
-									<a href="" hidefocus="true" target="_blank" >图床 - Upload.cc</a>
-								</li>
-								<li>
-									<a href="" hidefocus="true" target="_blank" >网盘 - 百度网盘</a>
-								</li>
-								<li>
-									<a href="" hidefocus="true" target="_blank" >网盘 - 微云</a>
-								</li>
-								<li>
-									<a href="" hidefocus="true" >搜索 - 百度站内搜索</a>
+									<a href="#" hidefocus="true" title="暂未开放">群组申请</a>
 								</li>
 							</ul>
-							<div id="mu" class="cl"></div>
 						</div>
 					</div>
 					<div id="wp" class="wp" style="margin:0 85px;float:left;">
@@ -397,12 +369,12 @@
 		</div>
 		<!--主体div结束-->
 		<!--脚注-->
-		<!--<div style="width:100%;margin-top:-20px;background:url('./images/bedrock.png') 0 0 repeat;padding-top:50px;">-->
+		<!--<div style="width:100%;margin-top:-20px;background:url('../images/bedrock.png') 0 0 repeat;padding-top:50px;">-->
 			<div id="ft" class="wp cl">
 				<div id="flk" class="y">
 					<p class="xs0">GMT+8 <span id="Time"></span><span id="debuginfo">, Release: Build.2020.04.22.2200, GYM.</span></p>
 					<p>"广东白云学院®"为广东白云学院的商标 本站与广东白云学院没有从属关系</p>
-					<p>&copy; 2000-2020 <a href="./index.html" target="_blank">广东白云学院论坛</a> 版权所有</p>
+					<p>&copy; 2000-2020 <a href="../index.html" target="_blank">广东白云学院论坛</a> 版权所有</p>
 					<!--显示时间-->
 					<script>
 						setInterval("Time.innerHTML=new Date().toLocaleString()",1000);
@@ -444,7 +416,7 @@
 				bottom:160px;
 			}
 			#scrolltop .scrolltopa {
-				background:url("./images/scrollTop.png") left top no-repeat;
+				background:url("../images/scrollTop.png") left top no-repeat;
 				width:120px;
 				height:70px;
 				border:none;
