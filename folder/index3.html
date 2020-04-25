@@ -1,0 +1,405 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	.ziti
+	<head>
+		<!--网页编码-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!--指定IE8浏览器模拟Edge浏览器的渲染方式-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--在IE中关闭xp主题-->
+		<meta http-equiv="MSThemeCompatible" content="Yes" />
+		<!--标题-->
+		<title>Minecraft中文论坛</title>
+		<!--图标-->
+		<link rel="icon" href="./images/logo.png" type="image/x-icon">
+		<!--收藏夹图标-->
+		<link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+		<!--主体css-->
+		<link rel="stylesheet" type="text/css" href="./style/style_30_common.css" />
+		<link rel="stylesheet" type="text/css" href="./style/style_30_portal_index.css" />
+		<!--通用js-->
+		<script src="./style/common.js" type="text/javascript"></script><!--头像-->
+		<script src="./style/forum.js" type="text/javascript"></script><!--公告栏-->
+		<script src="./style/jquery.min.js" type="text/javascript"></script><!--jquery库-->
+		<!--图片滚动-->
+		<script type="text/javascript">
+			var jq = jQuery.noConflict();
+		</script>
+	</head>
+
+<body id="nv_portal" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
+		<!--背景-->
+		<div id="body_fixed_bg"></div>
+		<!--导航栏-->
+		<div id="toptb" class="cl">
+			<div class="new_wp wp">
+				<div class="z light">
+					<a href="http://www.baiyunu.edu.cn/" target="_blank" >广东白云学院官网</a>
+					<a href="https://baike.baidu.com/item/广东白云学院/2971074" target="_blank" >广东白云学院中文百科</a>
+				</div>
+		<div class="y">
+					<div class="user_tools" >
+						<a href="" class="newtips0" id="myprompt" title="消息" onmouseover="showMenu({'ctrlid':'myprompt'});" target="_blank"></a>
+						<a href="" id="usertools" class="tools" title="功能" onmouseover="showMenu({'ctrlid':'usertools'});"></a>
+						<a href="" class="friends" title="好友" id="friends"></a>
+					</div>
+			<div id="user_info_menu" style="display: none">
+						<ul class="user_info_menu_info">
+							<li>
+								<p class="username">Administrator</p>
+							</li>
+							<li>
+								<a class="rank" href="">Lv.∞ 系统管理员</a>
+							</li>
+						</ul>
+						<ul class="user_info_menu_btn">
+							<li>
+								<a href="" target="_blank">账号设置</a>
+							</li>
+							<li>
+								<a href="" target="_blank">我的帖子</a>
+							</li>
+							<li>
+								<a href="" target="_blank">我的收藏</a>
+							</li>
+							<li>
+								<a href="" onclick="">退出登录</a>
+							</li>
+						</ul>
+		  </div>
+							<div class="avt y" id="user_info" onmouseover="showMenu({'ctrlid':this.id})">
+						<div class="avt y hd_t_a" style="z-index:0">
+							<a href="">
+								<img alt="Administrator" src="./images/avatar.png" />
+							</a>
+						</div>
+					</div>
+			  </div>
+			</div>
+		</div>
+        <!--下拉菜单-->
+	<ul id="myprompt_menu" class="p_pop" style="display: none;">
+			<li>
+				<a href="" id="pm_ntc" style="background-repeat: no-repeat; background-position: 0 50%;" >消息</a>
+			</li>
+			<li>
+				<a href="">粉丝</a>
+			</li>
+</ul>
+		<ul id="usertools_menu" class="p_pop" style="display: none; text-align: center;">
+			<li>
+				<a href="">任务</a>
+			</li>
+			<li>
+				<a href="">道具</a>
+			</li>
+			<li>
+				<a href="">勋章</a>
+			</li>
+			<li>
+				<a href="">宣传</a>
+			</li>
+		</ul>
+	<div id="sslct_menu" class="cl p_pop" style="display: none;">
+			<span class="sslct_btn" onclick="" title="默认">
+				<i></i>
+			</span>
+			<span class="sslct_btn" onclick="" title="经典">
+				<i style="background:#70ba5e"></i>
+			</span>
+</div>
+		<!--主体div-->
+		<div class="mc_map_wp">
+			<!--头部-->
+<div class="new_wp" style="padding: 28px 0 26px 0;">
+				<div class="hdc cl">
+					<!--论坛标志-->
+					<h2 style="padding:0;float: left;">
+						<a href="#" title="广东白云学院论坛">
+							<img src="./images/logo_sc.png" alt="广东白云学院论坛" border="0" />
+						</a>
+					</h2>
+					<!--校训-->
+					<div id="YXh3Sg" class="y">
+						<div id="s5WWA8f34">
+							<div id="dG2s">
+								<div class="col-lg-3 col-lg-offset-4 col-xs-12">
+									<div class="RjlxN">
+										<div id="txt"><em class="a1">理想职业从白云开始</em> <em class="a2">敦品励学 求是笃行</em></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<style>
+						#s5WWA8f34 {
+							width: 480px;
+							height: 96px;
+							position: relative;
+							overflow: hidden;
+							text-align: center;
+						}
+						#s5WWA8f34 #dG2s {
+							margin: 9px 9px;
+						}
+						#s5WWA8f34 .RjlxN {
+							display: inline-block;
+							margin-right: 8px;
+						}
+						#txt .a1,#txt .a2 {
+							font-size:14px;
+							color:#034567;
+							font-weight:700;
+							display:block;
+							overflow:hidden;
+							width:0;
+							margin-top:3px;
+							white-space:nowrap;
+							letter-spacing:10px;
+							font-style:normal;
+							position:absolute
+						}
+						#txt .a1 {
+							animation:m1 10s infinite;
+							-webkit-animation:m1 8s infinite;
+						}
+						#txt .a2 {
+							animation:m2 10s infinite;
+							-webkit-animation:m2 8s infinite;
+						}
+						@keyframes m1 {
+							0% {width:0;
+								opacity:0;
+							}
+							5% {
+								width:10%;
+								opacity:1;
+							}
+							10% {
+								width:20%;
+								opacity:1;
+							}
+							15% {
+								width:30%;
+								opacity:1;
+							}
+							20% {
+								width:40%;
+								opacity:1;
+							}
+							25% {
+								width:50%;
+								opacity:1;
+							}
+							30% {
+								width:60%;
+								opacity:1;
+							}
+							35% {
+								width:70%;
+								opacity:1;
+							}
+							40% {
+								width:80%;
+								opacity:1;
+							}
+							45% {
+								width:100%;
+								opacity:1;
+							}
+							50% {
+								opacity:0;
+							}
+							100% {
+								opacity:0;
+							}
+						}
+						@-webkit-keyframes m2{
+							0% {
+								width:0;
+								opacity:0;
+							}
+							50% {
+								width:0;
+								opacity:0;
+							}
+							55% {
+								width:10%;
+								opacity:1;
+							}
+							60% {
+								width:20%;
+								opacity:1;
+							}
+							65% {
+								width:30%;
+								opacity:1;
+							}
+							70% {
+								width:40%;
+								opacity:1;
+							}
+							75% {
+								width:50%;
+								opacity:1;
+							}
+							80% {
+								width:60%;
+								opacity:1;
+							}
+							85% {
+								width:70%;
+								opacity:1;
+							}
+							90% {
+								width:80%;
+								opacity:1;
+							}
+							95% {
+								width:100%;
+								opacity:1;
+							}
+							100% {
+								width:100%;
+								opacity:0;
+							}
+						}
+					</style>
+				</div>
+			</div>
+			<!--框背景的头部-->
+			<div class="mc_map_border_top"></div>
+			<!--框背景的左半部分-->
+			<div class="mc_map_border_left">
+				<!--框背景的右半部分-->
+				<div class="mc_map_border_right">
+					<div id="hd">
+						<div class="wp">
+							<div id="nv">
+								<ul class="nv_ul">
+									<li class="a" id="mn_portal" >
+										<a href="" hidefocus="true" title="Portal"  >首页<span>Portal</span></a>
+									</li>
+									<li id="mn_forum" >
+										<a href="" hidefocus="true" title="Forum"  >论坛<span>Forum</span></a>
+									</li>
+									<li id="mn_group" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})">
+										<a href="" hidefocus="true" title="Groups"  >小组<span>Groups</span></a>
+									</li>
+									<li id="mn_N66dd" onmouseover="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})">
+										<a href="" hidefocus="true" title="Wiki"  >百科<span>Wiki</span></a>
+									</li>
+									<li id="mn_N45f0" onMouseOver="showMenu({'ctrlid':this.id,'ctrlclass':'hover','duration':2})"> <a href="#" hidefocus="true" title="Utilities">工具<span>Utilities</span></a> </li>
+								</ul>
+							</div>
+							<!--公告-->
+							<div id="nv_right">
+								<div id="an">
+									<dl class="cl">
+										<dd>
+											<div id="anc">
+												<ul id="ancl">
+													<li>
+														<span>
+															<a href="" target="_blank" class="xi2">欢迎来到广东白云学院论坛 理想职业从白云开始</a>
+														</span>
+													</li>
+													<li>
+														<span>
+															<a href="" target="_blank" class="xi2">请各位同学遵守版规 敦品励学 求是笃行</a>
+														</span>
+													</li>
+												</ul>
+											</div>
+										</dd>
+									</dl>
+								</div>
+				<!--下面这段公告翻页用的-->
+								<script type="text/javascript">
+									announcement();
+								</script>
+							</div>
+							<!--下拉菜单-->
+							<ul class="p_pop h_pop" id="mn_group_menu" style="display: none">
+								<li>
+									<a href="" hidefocus="true" >小组审核申请</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" >优秀小组申请</a>
+								</li>
+							</ul>
+							<ul class="p_pop h_pop" id="mn_N66dd_menu" style="display: none">
+							  <li> <a hidefocus="true">办学历史</a> </li>
+							  <li>
+									<a href="" hidefocus="true" >办学条件</a>
+							  </li>
+								<li>
+									<a href="" hidefocus="true" >学科建设</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" >师资力量</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" >教学建设</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" >合作交流</a>
+								</li>
+								<li>
+									<a href="" >科研成果</a>
+								</li>
+								<li>
+									<a href="" >学术资源</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" >文化传统</a>
+								</li>
+								
+							</ul>
+							<ul class="p_pop h_pop" id="mn_N45f0_menu" style="display: none">
+								<li>
+									<a href="" hidefocus="true" target="_blank" >帮助</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" target="_blank" >图床 - sm.ms</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" target="_blank" >图床 - Upload.cc</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" target="_blank" >网盘 - 百度网盘</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" target="_blank" >网盘 - 微云</a>
+								</li>
+								<li>
+									<a href="" hidefocus="true" >搜索 - 百度站内搜索</a>
+								</li>
+							</ul>
+							<div id="mu" class="cl"></div>
+						</div>
+					</div>
+					<div id="wp" class="wp" style="margin:0 85px;float:left;">
+<p class="xs3">有的学开着开着就没了，等着等着暑假就来了.....</p>
+<pre>    </pre>
+						<p class="xs4">等了好久终于等到了广东的开学通知，小伙伴们都在等着学校官宣，但迟迟按动。还有些地区开学通知发布之后还有撤回？有的学校干脆不开学了。</p>
+					<div align="center">	<i><img src="images/a55ab4e6176eaa4fb261580f6ced02fb_t.gif" width="99" height="99" alt=""/></i></div>
+						<p class="xs4">目前，除了湖北以外，全国多地都公布了各自的开学时间，但是随着疫情的变化，输入性病例压力增大，多地对开学按下了暂停键。</p>
+<p class="xs4">较早宣布开学的云南，就曾首次对开学按下“暂停键”，近期山东省、四川省泸州等多市、黑龙江省哈尔滨都陆续发出了推迟或调整开学时间的通知。</p>
+						<p class="xs4">4月14日下午，北京市教工委新闻发言人李奕在北京市新冠肺炎疫情防控工作新闻发布会上明确表示，暂不考虑高校和幼儿园返校。北京地区高校开学遥遥无期。</p>
+						<pre>    </pre>
+                        <p class="xs5">多所高校发布“不开学”通知</p>
+						<pre>    </pre>
+                        <p class="xs4">高校学子返校之路可谓困难重重，除了新疆、山西、青海等省高校首批学生已经顺利返校，其他省份得高校还在危险的边缘试探。</p>
+                        <div align="center"><img src="images/微信图片_20200423170739.jpg" width="200" height="200" alt=""/></div>
+                        <div align="center"><img src="images/微信图片_20200423170743.jpg" width="200" height="216" alt=""/></div>
+<p class="xs4">4月14日，网传南京信息工程大学发布紧急通知，寻找乘坐飞机由哈尔滨至南京（航班号为H01711）的学生。据悉，该航班有乘客发热，学校为谨慎起见进行了同乘人员排查。此事引起学生热议，是否该现在开学的讨论再次冲上热搜。</p>
+<div align="center"><img src="images/微信图片_20200423171330.png" width="585" height="341" alt=""/></div>
+						<p class="xs4">除此之外，官宣大学4月13日起开学的江苏省以及一直未公布开学时间的湖北省多所高校，包括<strong>南京航空航天大学、南京农业大学、华中科技大学等校近期纷纷发布了“不返校”通知。</strong></p>
+						<pre>    </pre>
+						<p class="xs4">现在逐渐的有很多学校宣布了开学，希望大家心态放好，期待疫情结束，耐心等待学校安排！</p>
+                           <p class="xs4"> 疫情期间确实有很多预料不到的事情，希望大家不要消极对待。改变心态一分钟，而心态却能决定一整天的生活和学习效率。</p>
+                     <p class="xs4"> 让我们一起积极面对吧！加油！</p>
+					</div></div></div></div>
+					</body>
+</html>
