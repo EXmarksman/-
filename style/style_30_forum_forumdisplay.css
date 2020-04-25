@@ -553,6 +553,7 @@
 .tl th,.tl td {
 	padding: 5px 0;
 	border-bottom: 1px solid #3B87AB;
+	text-align:left;
 }
 
 .emptb th,.emptb td {
@@ -617,6 +618,7 @@
 }
 
 .tl .new {
+	width: 84%
 }
 
 .tl .comm {
